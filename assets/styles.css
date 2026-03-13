@@ -73,17 +73,13 @@ img {
   display: block;
 }
 
-/* THIS SECTION CONTROLS THE GAP UNDER THE HERO */
+/* Only real change: background switched from gray to white */
 .banner-info {
   width: 100%;
   max-width: 100%;
-  background: #f5f5f5;
+  background: #ffffff;
   text-align: center;
-
-  /* moved upward tighter to hero */
   margin-top: -18px;
-
-  /* reduced top padding */
   padding: 4px 20px 20px;
 }
 

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FOLLOWING SEAS art co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-box">FOLLOWING SEAS</span><span class="brand-small"> Art Co.</span>
+    </a>
+    <nav class="nav">
+      <a href="about.html">ABOUT</a>
+      <a href="sneak-peek.html">SNEAK PEEK</a>
+      <a href="blog.html">BLOG</a>
+      <a href="#subscribe">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION WITH IMAGE -->
+  <section class="hero-image">
+    <img 
+      src="assets/img/hero.jpg" 
+      alt="Coastal inspired artwork"
+      class="hero-img"
+    />
+    <div class="hero-overlay">
+      <h1>FOLLOWING SEAS<span class="reg">&reg;</span></h1>
+      <p class="tagline">"may the wind be always at your back"</p>
+      <a class="cta" href="#gallery">View Prints</a>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION - 2 COLUMNS DESKTOP, 1 COLUMN MOBILE -->
+  <main id="gallery" class="gallery-section">
+    <div class="gallery-grid-two-col">
+      <!-- Image 1 -->
+      <div class="gallery-item-two-col" data-lightbox="assets/img/gallery-01.jpg">
+        <img 
+          src="assets/img/gallery-01.jpg" 
+          alt="Coastal print artwork 1"
+          loading="lazy"
+          class="gallery-img-two-col"
+        />
+      </div>
+
+      <!-- Image 2 -->
+      <div class="gallery-item-two-col" data-lightbox="assets/img/gallery-02.jpg">
+        <img 
+          src="assets/img/gallery-02.jpg" 
+          alt="Coastal print artwork 2"
+          loading="lazy"
+          class="gallery-img-two-col"
+        />
+      </div>
+
+      <!-- Image 3 -->
+      <div class="gallery-item-two-col" data-lightbox="assets/img/gallery-03.jpg">
+        <img 
+          src="assets/img/gallery-03.jpg" 
+          alt="Coastal print artwork 3"
+          loading="lazy"
+          class="gallery-img-two-col"
+        />
+      </div>
+    </div>
+  </main>
+
+  <!-- SUBSCRIBE SECTION -->
+  <section id="subscribe" class="subscribe">
+    <h2>Subscribe</h2>
+    <p>Get sneak peeks, drops, and print restocks.</p>
+    <form onsubmit="return false" class="subscribe-form">
+      <input type="email" placeholder="Email address" required />
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="brand-box">FOLLOWING SEAS</span><span class="brand-small"> Art Co.</span>
+      </div>
+      <div class="copyright">&copy; 2025 Following Seas.</div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" alt="Full size artwork">
+  </div>
+</body>
+</html>

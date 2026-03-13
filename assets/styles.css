@@ -73,17 +73,22 @@ img {
   display: block;
 }
 
+/* THIS SECTION CONTROLS THE GAP UNDER THE HERO */
 .banner-info {
   width: 100%;
   max-width: 100%;
   background: #f5f5f5;
   text-align: center;
-  padding: 10px 20px 20px;
-  margin-top: -6px;
+
+  /* moved upward tighter to hero */
+  margin-top: -18px;
+
+  /* reduced top padding */
+  padding: 4px 20px 20px;
 }
 
 .tagline {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   color: #666;
   font-size: 14px;
   letter-spacing: 0.11em;
@@ -154,14 +159,14 @@ img {
   }
 
   .banner-info {
-    padding: 8px 16px 18px;
-    margin-top: -4px;
+    margin-top: -14px;
+    padding: 4px 16px 18px;
   }
 
   .tagline {
     font-size: 12px;
     letter-spacing: 0.08em;
-    margin: 0 0 10px;
+    margin: 0 0 8px;
   }
 
   .content-section {

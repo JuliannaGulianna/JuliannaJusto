@@ -1,58 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julianna Justo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
+* {
+  box-sizing: border-box;
+}
 
-  <header class="site-header">
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-  <section class="hero-banner">
-    <img
-      src="assets/logo-maker_12-03-2026_20h28m11s.jpeg"
-      alt="Julianna Justo banner"
-      class="banner-img"
-    >
-  </section>
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+  background: #ffffff;
+  line-height: 1.6;
+}
 
-  <section class="banner-info">
-    <p class="tagline">Illustration • Tattoo-Inspired Artwork • Apparel Graphics</p>
-    <a class="cta" href="#portfolio">View Portfolio</a>
-  </section>
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-  <section id="about" class="content-section">
-    <h2>About</h2>
-    <p>
-      Tattoo-inspired illustration and apparel graphics exploring traditional imagery,
-      bold composition, and timeless visual storytelling.
-    </p>
-  </section>
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 18px 28px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-  <section id="portfolio" class="content-section">
-    <h2>Portfolio</h2>
-    <p>Artwork and apparel graphics coming soon.</p>
-  </section>
+.nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
-  <section id="contact" class="content-section">
-    <h2>Contact</h2>
-    <p>Email: hello@juliannajusto.com</p>
-  </section>
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 
-  <footer class="site-footer">
-    <p>© 2026 Julianna Justo</p>
-  </footer>
+.nav a:hover {
+  opacity: 0.6;
+}
 
-</body>
-</html>
+.hero-banner {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-info {
+  width: 100%;
+  max-width: 100%;
+  background: #f5f5f5;
+  text-align: center;
+  padding: 28px 20px 34px;
+}
+
+.tagline {
+  margin: 0 0 18px;
+  color: #666;
+  font-size: 15px;
+  letter-spacing: 0.11em;
+  line-height: 1.5;
+}
+
+.cta {
+  display: inline-block;
+  border: 1px solid #111;
+  color: #111;
+  text-decoration: none;
+  padding: 12px 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+
+.cta:hover {
+  background: #111;
+  color: #fff;
+}
+
+.content-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 24px 36px;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  font-size: 32px;
+  margin: 0 0 14px;
+}
+
+.content-section p {
+  margin: 0;
+  color: #666;
+}
+
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  text-align: center;
+  padding: 26px 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    justify-content: center;
+    padding: 14px 20px;
+  }
+
+  .nav {
+    gap: 18px;
+    justify-content: center;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  .banner-info {
+    padding: 22px 20px 28px;
+  }
+
+  .tagline {
+    font-size: 13px;
+  }
+
+  .content-section {
+    padding: 24px 20px 30px;
+  }
+
+  .content-section h2 {
+    font-size: 28px;
+  }
+}
